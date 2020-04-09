@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+
+
+
+  <div class="banner">
+    <img src="{% static 'images/splash.jpg'%}" class="d-block w-100 img-fluid splash-photo" alt="...">
+
+      <div class="heading">
+          <h2> Ben DeRenzi, Computer Scientist/Software Engineer</h2>
+          <h4>Currently seeking employment</h4>
+      </div>
+  </div>
+
+
+<div class="container-fluid ">
+<hr>
+
+<div class="row" style = 'margin-top:40px; margin-bottom:20px;'>
+  <div class="col-sm-4">
+    <div class="card project_card" >
+        <img src="{% static 'images/email.png' %}" class="card-img-top centered_img social_card_img" alt="..." style = 'border-radius:10%;'>
+        <div class="card-body">
+          <h5 class="card-title">BenDeRenzi@protonmail.com</h5>
+          <p class="card-text">Contact me via email!</p>
+          <a href="mailto:benderenzi@protonmail.com" class="btn btn-primary">Go</a>
+        </div>
+      </div>
+  </div>
+  <div class="col-sm-4">
+        <div class="card project_card" >
+        <img src="{% static 'images/github_logo.png' %}" class="card-img-top centered_img social_card_img" alt="..."  style = 'border-radius:10%;'>
+        <div class="card-body">
+        <h5 class="card-title">Github</h5>
+        <p class="card-text">Check out Projects I've worked on with GitHub!</p>
+        <a href="https://github.com/benderenzi121" class="btn btn-primary">Go</a>
+        </div>
+  </div>
+  </div>
+  <div class="col-sm-4">
+          <div class="card project_card">
+            <img src="{% static 'images/linkedin_logo.png' %}" class="card-img-top centered_img social_card_img" alt="..." >
+              <div class="card-body">
+                <h5 class="card-title">Linked In</h5>
+                <p class="card-text">Connect with me on LinkedIn!</p>
+                <a href="https://www.linkedin.com/in/benjamin-derenzi-a9b154195/" class="btn btn-primary">Go</a>
+              </div>
+          </div>
+  </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid text-center " style = 'margin-top:20px;'>
+  <h1 class = 'display-1 featured strong'>Featured Projects</h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card project_card h-100" >
+            <img src="{% static 'images/sc_3.jpg' %}" class="card-img-top" alt="..." style = 'border-radius:10%;'>
+            <div class="card-body">
+              <h5 class="card-title">Django art webpage</h5>
+              <p class="card-text">A website i built in the process of learning how the pieces of django fit together!</p>
+              <a href="https://github.com/benderenzi121/ArtSite" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="card project_card h-100" >
+            <img src="{% static 'images/sc_2.jpeg' %}" class="card-img-top" alt="..."  style = 'border-radius:10%; height:auto;'>
+            <div class="card-body">
+            <h5 class="card-title">Blog Project</h5>
+            <p class="card-text">Blog Project where an administrator can log in and create posts with comments and approval functionality. </p>
+          <a href="https://github.com/benderenzi121/blog-project" class="btn btn-primary"><span class="glyphicon glyphicon-download">Download</span></a>
+            </div>
+      </div>
+      </div>
+      <div class="col-sm-4 h-100">
+              <div class="card project_card">
+                <img src="{% static 'images/sc_1.jpeg' %}" class="card-img-top" alt="..." style = 'border-radius:5%; '>
+                  <div class="card-body">
+                    <h5 class="card-title">Space Shootout</h5>
+                    <p class="card-text">A virtual shooting gallery where players compete for a highscore! </p>
+                    <a href="https://github.com/benderenzi121/shootout_saloon" class="btn btn-primary">Download</a>
+                  </div>
+              </div>
+      </div>
+    </div>
+<div class="container-fluid" style = 'margin-top:40px;'>
+
+
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-4">
+        <div class="card project_card h-100 " >
+            <img src="{% static 'images/sc_login.png' %}" class="card-img-top" alt="..." style = 'border-radius:10%;'>
+            <div class="card-body">
+              <h5 class="card-title">Django User Login System</h5>
+              <p class="card-text">A website Designed to work with the User Login system built into Django!</p>
+              <a href="https://github.com/benderenzi121/django-user-login" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm-4 ">
+            <div class="card project_card h-100" >
+            <img src="{% static 'images/cs_social.png' %}" class="card-img-top" alt="..."  style = 'border-radius:10%;'>
+            <div class="card-body">
+            <h5 class="card-title">Social Media Site</h5>
+            <p class="card-text">social media site built in django that has groups in which users can post to. Features user logins as well as authentification.</p>
+            <a href="https://github.com/benderenzi121/SimpleSocialSite" class="btn btn-primary">Download</a>
+            </div>
+            </div>
+
+      </div>
+      <div class="col-sm-2 ">
+      </div>
+      <!--  last empty card   -->
+
+    </div>
+
+
+  </div>
+  </div>
+
+  <hr>
+
+  <div class="container-fluid " style = 'margin-bottom:40px; margin-top:100px;'>
+    <h4 class='display-4 text-center'>Contact me / view my work!</h4>
+
+  <div class="row" style = 'margin-top:40px;'>
+    <div class="col-sm-4">
+      <div class="card project_card" >
+          <img src="{% static 'images/email.png' %}" class="card-img-top centered_img social_card_img" alt="..." style = 'border-radius:10%;'>
+          <div class="card-body">
+            <h5 class="card-title">BenDeRenzi@protonmail.com</h5>
+            <p class="card-text">Contact me via email!</p>
+            <a href="mailto:benderenzi@protonmail.com" class="btn btn-primary">Go</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+          <div class="card project_card" >
+          <img src="{% static 'images/github_logo.png' %}" class="card-img-top centered_img social_card_img" alt="..."  style = 'border-radius:10%;'>
+          <div class="card-body">
+          <h5 class="card-title">Github</h5>
+          <p class="card-text">Check out Projects I've worked on with GitHub!</p>
+          <a href="https://github.com/benderenzi121" class="btn btn-primary">Go</a>
+          </div>
+    </div>
+    </div>
+    <div class="col-sm-4">
+            <div class="card project_card">
+              <img src="{% static 'images/linkedin_logo.png' %}" class="card-img-top centered_img social_card_img" alt="..." >
+                <div class="card-body">
+                  <h5 class="card-title">Linked In</h5>
+                  <p class="card-text">Connect with me on LinkedIn!</p>
+                  <a href="https://www.linkedin.com/in/benjamin-derenzi-a9b154195/" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+    </div>
+  </div>
+  </div>
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+  <div class="container-fluid card card-shadow text-light about-card">
+    <div class="row about-card-content">
+      <div class="col-md-3 text-center" style = 'text-align:center;'>
+        <img src="{% static 'images/me.jpg' %}" alt="picture of me oops" class='self-portrait'>
+        <p style = 'text-align:center;' class="mb-40 mt-2">Some sample text for now</p>
+      </div>
+      <div class="col-md-9">
+        <blockquote class="blockquote">
+        <p class="about-me-text text-center"> Hello, my name is Ben DeRenzi, for now this is just some sample text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut imperdiet quam. Mauris eu rhoncus tellus. Integer vehicula quam congue ex rhoncus sodales. Nulla facilisi. Cras blandit placerat orci et tincidunt. Donec non aliquet nisl. Nullam sed justo eu erat ullamcorper pellentesque. Proin vitae sapien sit amet orci venenatis mattis. Suspendisse potenti. Maecenas sed vestibulum dui, at tristique justo. Vestibulum dictum, dui ac accumsan maximus, purus eros cursus leo, at feugiat lacus justo sit amet leo. Integer vulputate </p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+
+
+
+{% endblock %}
